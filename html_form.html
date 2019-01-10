@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>HTML FORM</title>
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1">      
+        <link rel = "stylesheet"
+              href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel = "stylesheet"
+              href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+        <script type = "text/javascript"
+                src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+        </script> 
+
+
+        <Style>
+            .row
+            {
+                padding:10px;
+            }
+            .prat
+            {
+                height: 500px;
+                width: 100px;
+            }
+        </Style>
+    </head>
+    <body>
+
+        <div class="row">
+            <div class="col l4 prat" style="background-color: black"></div>
+            <div class="col l4 prat" style="background-color: brown"></div>
+            <div class="col l4 prat" style="background-color: blue"></div>
+        </div>
+
+
+        <div class="row">
+            <form class="col s12" id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbxq2RZEtt6JbPrjqwk0ryKnjRcCyxdJRjZovGbW1bOZ5fDbEsc/exec">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input placeholder="Placeholder"  name="first_name" id="first_name" type="text" class="validate">
+                        <label for="first_name" >First Name</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="last_name" name="last_name" type="text" class="validate">
+                        <label for="last_name" >Last Name</label>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="message" name="message" type="text" class="validate">
+                        <label for="message" >message</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="email" name="email" type="email" class="validate">
+                        <label for="email" >Email</label>
+                       </div>
+                </div>
+                
+                <div class="row">
+                    <input type="submit" text="SUBMIT">
+                </div>
+
+            </form>
+        </div>
+
+
+
+    </body>
+</html>
